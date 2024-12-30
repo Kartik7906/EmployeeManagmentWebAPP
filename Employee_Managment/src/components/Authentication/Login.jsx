@@ -2,8 +2,8 @@ import React, { useState } from "react";
 
 const Login = ({ handleLogin }) => {
   // 2-way binding for form inputs
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("testing- e@e.com");
+  const [password, setPassword] = useState("123");
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -13,8 +13,8 @@ const Login = ({ handleLogin }) => {
     console.log("Password: ", password);
 
     // Clear the form fields
-    setEmail("");
-    setPassword("");
+    setEmail("testing- e@e.com");
+    setPassword("123");
   };
 
   return (
